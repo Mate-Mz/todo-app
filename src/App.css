@@ -1,0 +1,158 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+.App-main {
+  padding: 20px;
+}
+
+.task-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+/* Style the task name */
+.task-item h3:first-child {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+/* Style the username */
+.task-item h3:nth-child(2) {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+/* Style the deadline */
+.task-item h3:nth-child(3) {
+  font-size: 14px;
+  color: #ff5733; /* Adjust the color as needed */
+}
+
+.task-item a {
+  color: #445f9d;
+  text-decoration: underline;
+  margin-right: 10px;
+  text-underline-offset: 4px;
+}
+
+.task-item p {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.task-item button {
+  background-color: #282c34;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.task-item button:hover {
+  background-color: #1d5275;
+}
+
+
+/* ToDoForm */
+
+.todo-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.checkbox-label {
+  display: block;
+  margin-top: 10px;
+}
+
+.checkbox-input {
+  margin-left: 10px;
+}
+
+.deadline-section {
+  margin-top: 10px;
+}
+
+.deadline-label {
+  font-weight: bold;
+}
+
+.select-box {
+  width: 70px;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+/*loading spinner*/
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.spinner {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
